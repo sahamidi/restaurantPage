@@ -1,4 +1,8 @@
 import _ from 'lodash';
+import {addHeader} from `./header.js`;
+import {croMenuCreate} from `./croMenu.js`
+import {coffMenuCreate} from `./coffMenu.js`
+import { coffMenuCreate } from './coffMenu';
 function component() {
     const element = document.createElement('div');
   
@@ -9,6 +13,9 @@ function component() {
     return element;
   }
   
+  addHeader();
+  croMenuCreate();
+  coffMenuCreate();
   document.body.appendChild(component());
 
 
