@@ -1,8 +1,7 @@
 import _ from 'lodash';
-import {addHeader} from `./header.js`;
-import {croMenuCreate} from `./croMenu.js`
-import {coffMenuCreate} from `./coffMenu.js`
-import { coffMenuCreate } from './coffMenu';
+import addHeader from "./header";
+import {croMenuCreate} from "./croMenu.js"
+import {coffMenuCreate} from "./coffMenu.js"
 function component() {
     const element = document.createElement('div');
   
