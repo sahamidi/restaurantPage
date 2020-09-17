@@ -1,21 +1,14 @@
 import _ from 'lodash';
-import addHeader from "./header";
-import {croMenuCreate} from "./croMenu.js"
-import {coffMenuCreate} from "./coffMenu.js"
-function component() {
-    const element = document.createElement('div');
-  
-
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
+import {addHeader} from "./header.js";
+import {croMenuCreate} from "./croMenu.js";
+import { aboutUs } from '../aboutUs.js';
+// import {coffMenuCreate} from "./coffMenu.js";
   
   addHeader();
   croMenuCreate();
-  coffMenuCreate();
-  document.body.appendChild(component());
+  aboutUs();
+  // coffMenuCreate();
+  // document.body.appendChild(component());
 
 
 //<h1 class="header">Don Eat My Cronut!</h1>

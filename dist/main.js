@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./aboutUs.js":
+/*!********************!*\
+  !*** ./aboutUs.js ***!
+  \********************/
+/*! exports provided: aboutUs */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"aboutUs\", function() { return aboutUs; });\nfunction aboutUs()\n{\n    document.getElementById(\"aboutUs\").innerHTML = `<h2>About Us</h2>\n    <p> Contact: 777-777-7777</p>\n    <p>Email: whoaNutCronut@gmail.com</p>\n    <p>We love everything Cronut and cant wait to have you try ours!!</p>\n    `\n}\n\n//# sourceURL=webpack:///./aboutUs.js?");
+
+/***/ }),
+
 /***/ "./node_modules/lodash/lodash.js":
 /*!***************************************!*\
   !*** ./node_modules/lodash/lodash.js ***!
@@ -119,18 +131,6 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
-/***/ "./src/coffMenu.js":
-/*!*************************!*\
-  !*** ./src/coffMenu.js ***!
-  \*************************/
-/*! exports provided: coffMenuCreate */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"coffMenuCreate\", function() { return coffMenuCreate; });\n\n\nfunction coffMenuCreate()\n{\n    document.getElementById(\"content\").innerHTML = `<h2> \n    Coffee\n  </h2>\n  <ul>\n    <li><span class=\"left\">Latte</span><span class=\"right\">  $3.00</span></li>\n    <li><span class=\"left\">Regular Coffee</span><span class=\"right\">  $3.00</span></li>\n  </ul>\n  <div>\n    \"Flavors: Hazelnut, Vanilla, Chocolate, Pumpkin Spice\"\n  </div>`\n}\n\n//# sourceURL=webpack:///./src/coffMenu.js?");
-
-/***/ }),
-
 /***/ "./src/croMenu.js":
 /*!************************!*\
   !*** ./src/croMenu.js ***!
@@ -139,7 +139,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"croMenuCreate\", function() { return croMenuCreate; });\n\n\nfunction croMenuCreate()\n{\n    document.getElementById(\"content\").innerHTML = `<h2>\n    Cronut Flavors\n  </h2>\n  <ul>\n    <li><span class=\"left\">Traditional Cronut</span><span class=\"right\">  $10.00</span></li>\n    <li><span class=\"left\">Creme Brule Cronut</span><span class=\"right\">    $10.00</span></li>\n    <li><span class=\"left\">Glazed Cronut</span><span class=\"right\">         $2.00</span></li>\n    <li><span class=\"left\">Chocolate Filled Cronut</span><span class=\"right\">  $3.00</span></li>\n  </ul>`\n}\n\n//# sourceURL=webpack:///./src/croMenu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"croMenuCreate\", function() { return croMenuCreate; });\n\nfunction croMenuCreate()\n{\n    document.getElementById(\"content\").innerHTML = `<h2>\n    Cronut Flavors\n  </h2>\n  <ul>\n    <li><span class=\"left\">Traditional Cronut</span><span class=\"right\">  $10.00</span></li>\n    <li><span class=\"left\">Creme Brule Cronut</span><span class=\"right\">    $10.00</span></li>\n    <li><span class=\"left\">Glazed Cronut</span><span class=\"right\">         $2.00</span></li>\n    <li><span class=\"left\">Chocolate Filled Cronut</span><span class=\"right\">  $3.00</span></li>\n  </ul>\n  <h2> \n    Coffee\n  </h2>\n  <ul>\n    <li><span class=\"left\">Latte</span><span class=\"right\">  $3.00</span></li>\n    <li><span class=\"left\">Regular Coffee</span><span class=\"right\">  $3.00</span></li>\n  </ul>\n  <div>\n    \"Flavors: Hazelnut, Vanilla, Chocolate, Pumpkin Spice\"\n  </div>`\n}\n\n//# sourceURL=webpack:///./src/croMenu.js?");
 
 /***/ }),
 
@@ -147,11 +147,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!***********************!*\
   !*** ./src/header.js ***!
   \***********************/
-/*! exports provided: default */
+/*! exports provided: addHeader */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\nfunction addHeader(){\n    document.getElementById(\"content\").innerHTML = `<h1 class=\"header\">Don Eat My Cronut!</h1>\n    <img src=\"/home/yourpalsal/projects/restaurantPage/src/LAFB-GT1830_DunlopDonuts-13.gif\"></img>\n  <div id=\"description\">Donut cravers unite with the simplistic menu of Cronuts that matter.  Cronuts are a melt\n  in your mouth creation where traditional donuts and croissant collide</div>\n</div>`\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (addHeader);\n\n//# sourceURL=webpack:///./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"addHeader\", function() { return addHeader; });\n\nfunction addHeader(){\n    document.getElementById(\"header\").innerHTML = `<h1 class=\"header\">Don Eat My Cronut!</h1>\n    <img src=\"/home/yourpalsal/projects/restaurantPage/src/LAFB-GT1830_DunlopDonuts-13.gif\"></img>\n  <div id=\"description\">Donut cravers unite with the simplistic menu of Cronuts that matter.  Cronuts are a melt\n  in your mouth creation where traditional donuts and croissant collide</div>\n</div>`\n}\n\n\n//# sourceURL=webpack:///./src/header.js?");
 
 /***/ }),
 
@@ -163,7 +163,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n\nfunction addHeader(){\n    
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _croMenu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./croMenu.js */ \"./src/croMenu.js\");\n/* harmony import */ var _coffMenu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./coffMenu.js */ \"./src/coffMenu.js\");\n\n\n\n\nfunction component() {\n    const element = document.createElement('div');\n  \n\n    // Lodash, now imported by this script\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\n  \n    return element;\n  }\n  \n  Object(_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  Object(_croMenu_js__WEBPACK_IMPORTED_MODULE_2__[\"croMenuCreate\"])();\n  Object(_coffMenu_js__WEBPACK_IMPORTED_MODULE_3__[\"coffMenuCreate\"])();\n  document.body.appendChild(component());\n\n\n//<h1 class=\"header\">Don Eat My Cronut!</h1>\n  //  <img src=\"/home/yourpalsal/projects/restaurantPage/src/LAFB-GT1830_DunlopDonuts-13.gif\"></img>\n//  <div id=\"description\">Donut cravers unite with the simplistic menu of Cronuts that matter.  Cronuts are a melt\n // in your mouth creation where traditional donuts and croissant collide</div>\n//</div>\n{/* <h2>\n  Cronut Flavors\n</h2>\n<ul>\n  <li><span class=\"left\">Traditional Cronut</span><span class=\"right\">  $10.00</span></li>\n  <li><span class=\"left\">Creme Brule Cronut</span><span class=\"right\">    $10.00</span></li>\n  <li><span class=\"left\">Glazed Cronut</span><span class=\"right\">         $2.00</span></li>\n  <li><span class=\"left\">Chocolate Filled Cronut</span><span class=\"right\">  $3.00</span></li>\n</ul> */}\n{/* <h2> \n  Coffee\n</h2>\n<ul>\n  <li><span class=\"left\">Latte</span><span class=\"right\">  $3.00</span></li>\n  <li><span class=\"left\">Regular Coffee</span><span class=\"right\">  $3.00</span></li>\n</ul>\n<div>\n  \"Flavors: Hazelnut, Vanilla, Chocolate, Pumpkin Spice\"\n</div> */}\n\n\n\n\n// let content = document.getElementById(\"content\")\n\n// let desc = document.createElement(\"div\")\n\n// content.appendChild(desc)\n\n// desc.className = \"description\"\n\n// let divElement = document.getElementsByClassName(\"description\")\n\n// doncument.getElementById(\"description\").innerText = \"Donut cravers unite with the simplistic menu of Cronuts that matter.  Cronuts are a melt in your mouth creation where traditional donuts and croissant collide\"\n\n// let header2 = document.createElement(\"h2\")\n// divElement.appendChild(header2)\n// header2.id = \"cronName\"\n// document.getElementById(\"cronName\").innerText = \"Cronut Flavors\"\n\n\n// let listOfCro = document.createElement(\"ul\")\n// listOfCro.id = \"listOfCr\"\n\n\n//   function menuList(text)\n//   {\n//     let liItem = document.createElement(\"li\")\n//     liItem.textContent = text\n//     return liItem\n//   }\n\n//   function nowAppend(parent, child)\n//   {\n//     children.forEach(function (child){\n//       parent.appendChild(child)\n//     })\n//   }\n \n//   let croList = document.getElementById(\"listOfCr\")\n//   let doItems = {\n//     menuList(\"Traditional Cronut $10.00\"),\n//     menuList(\"Creme Brlue Cronut $10.00\"),\n//     menuList(\"Glazed Cronut $2.00\"),\n//     menuList(\"Chocolate Filled Cronut $3.00\")\n//   }\n\n//   nowAppend(croList,doItems)\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\n/* harmony import */ var _croMenu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./croMenu.js */ \"./src/croMenu.js\");\n/* harmony import */ var _aboutUs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../aboutUs.js */ \"./aboutUs.js\");\n\n\n\n\n// import {coffMenuCreate} from \"./coffMenu.js\";\n  \n  Object(_header_js__WEBPACK_IMPORTED_MODULE_1__[\"addHeader\"])();\n  Object(_croMenu_js__WEBPACK_IMPORTED_MODULE_2__[\"croMenuCreate\"])();\n  Object(_aboutUs_js__WEBPACK_IMPORTED_MODULE_3__[\"aboutUs\"])();\n  // coffMenuCreate();\n  // document.body.appendChild(component());\n\n\n//<h1 class=\"header\">Don Eat My Cronut!</h1>\n  //  <img src=\"/home/yourpalsal/projects/restaurantPage/src/LAFB-GT1830_DunlopDonuts-13.gif\"></img>\n//  <div id=\"description\">Donut cravers unite with the simplistic menu of Cronuts that matter.  Cronuts are a melt\n // in your mouth creation where traditional donuts and croissant collide</div>\n//</div>\n{/* <h2>\n  Cronut Flavors\n</h2>\n<ul>\n  <li><span class=\"left\">Traditional Cronut</span><span class=\"right\">  $10.00</span></li>\n  <li><span class=\"left\">Creme Brule Cronut</span><span class=\"right\">    $10.00</span></li>\n  <li><span class=\"left\">Glazed Cronut</span><span class=\"right\">         $2.00</span></li>\n  <li><span class=\"left\">Chocolate Filled Cronut</span><span class=\"right\">  $3.00</span></li>\n</ul> */}\n{/* <h2> \n  Coffee\n</h2>\n<ul>\n  <li><span class=\"left\">Latte</span><span class=\"right\">  $3.00</span></li>\n  <li><span class=\"left\">Regular Coffee</span><span class=\"right\">  $3.00</span></li>\n</ul>\n<div>\n  \"Flavors: Hazelnut, Vanilla, Chocolate, Pumpkin Spice\"\n</div> */}\n\n\n\n\n// let content = document.getElementById(\"content\")\n\n// let desc = document.createElement(\"div\")\n\n// content.appendChild(desc)\n\n// desc.className = \"description\"\n\n// let divElement = document.getElementsByClassName(\"description\")\n\n// doncument.getElementById(\"description\").innerText = \"Donut cravers unite with the simplistic menu of Cronuts that matter.  Cronuts are a melt in your mouth creation where traditional donuts and croissant collide\"\n\n// let header2 = document.createElement(\"h2\")\n// divElement.appendChild(header2)\n// header2.id = \"cronName\"\n// document.getElementById(\"cronName\").innerText = \"Cronut Flavors\"\n\n\n// let listOfCro = document.createElement(\"ul\")\n// listOfCro.id = \"listOfCr\"\n\n\n//   function menuList(text)\n//   {\n//     let liItem = document.createElement(\"li\")\n//     liItem.textContent = text\n//     return liItem\n//   }\n\n//   function nowAppend(parent, child)\n//   {\n//     children.forEach(function (child){\n//       parent.appendChild(child)\n//     })\n//   }\n \n//   let croList = document.getElementById(\"listOfCr\")\n//   let doItems = {\n//     menuList(\"Traditional Cronut $10.00\"),\n//     menuList(\"Creme Brlue Cronut $10.00\"),\n//     menuList(\"Glazed Cronut $2.00\"),\n//     menuList(\"Chocolate Filled Cronut $3.00\")\n//   }\n\n//   nowAppend(croList,doItems)\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
