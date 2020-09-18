@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"aboutUs\", function() { return aboutUs; });\nfunction aboutUs()\n{\n    document.getElementById(\"aboutUs\").innerHTML = `<h2>About Us</h2>\n    <p> Contact: 777-777-7777</p>\n    <p>Email: whoaNutCronut@gmail.com</p>\n    <p>We love everything Cronut and cant wait to have you try ours!!</p>\n    `\n}\n\n//# sourceURL=webpack:///./aboutUs.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"aboutUs\", function() { return aboutUs; });\nfunction aboutUs()\n{\n    let parentElement = document.getElementById(`content`)\n    let newDivAbout = document.createElement(`div`)\n    newDivAbout.id = \"newDivAbout\"\n    parentElement.appendChild(newDivAbout)\n\n    newDivAbout.innerHTML = `<h2>About Us</h2>\n    <p> Contact: 777-777-7777</p>\n    <p>Email: whoaNutCronut@gmail.com</p>\n    <p>We love everything Cronut and cant wait to have you try ours!!</p>\n    `\n}\n\n//# sourceURL=webpack:///./aboutUs.js?");
 
 /***/ }),
 
@@ -143,6 +143,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/*! exports provided: addHeader */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"addHeader\", function() { return addHeader; });\n\nfunction addHeader(){\n  let parentElement = document.getElementById(`content`)\n  let newDivDescription= document.createElement(`div`)\n  newDivDescription.id = \"newDivDescription\"\n  parentElement.appendChild(newDivDescription)\n    newDivDescription.innerHTML = `<h1 class=\"header\">Don Eat My Cronut!</h1>\n    <img src=\"/home/yourpalsal/projects/restaurantPage/src/LAFB-GT1830_DunlopDonuts-13.gif\"></img>\n  <div id=\"description\">Donut cravers unite with the simplistic menu of Cronuts that matter.  Cronuts are a melt\n  in your mouth creation where traditional donuts and croissant collide</div>\n</div>`\n}\n\n\n//# sourceURL=webpack:///./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -151,7 +163,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _croMenu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./croMenu.js */ \"./src/croMenu.js\");\n/* harmony import */ var _aboutUs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../aboutUs.js */ \"./aboutUs.js\");\n\n// import {addHeader} from \"./header.js\";\n\n\n\nlet content = document.getElementById(\"content\")\n\n  \n  // addHeader();\n  Object(_croMenu_js__WEBPACK_IMPORTED_MODULE_1__[\"croMenuCreate\"])();\n  Object(_aboutUs_js__WEBPACK_IMPORTED_MODULE_2__[\"aboutUs\"])();\n \n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\n/* harmony import */ var _croMenu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./croMenu.js */ \"./src/croMenu.js\");\n/* harmony import */ var _aboutUs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../aboutUs.js */ \"./aboutUs.js\");\n\n\n\n\n\nlet content = document.getElementById(\"content\")\n\n  \n  Object(_header_js__WEBPACK_IMPORTED_MODULE_1__[\"addHeader\"])();\n  Object(_croMenu_js__WEBPACK_IMPORTED_MODULE_2__[\"croMenuCreate\"])();\n  Object(_aboutUs_js__WEBPACK_IMPORTED_MODULE_3__[\"aboutUs\"])();\n \n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
