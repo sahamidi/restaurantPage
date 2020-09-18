@@ -1,7 +1,13 @@
 
 export function croMenuCreate()
 {
-    document.getElementById("content").innerHTML = `<h2>
+  let parentElement = document.getElementById(`content`)
+  let newDivMenu = document.createElement(`div`)
+  newDivMenu.id = "newDivMenu"
+  parentElement.appendChild(newDivMenu)
+    newDivMenu.innerHTML = 
+
+    `<h2>
     Cronut Flavors
   </h2>
   <ul>
@@ -20,4 +26,6 @@ export function croMenuCreate()
   <div>
     "Flavors: Hazelnut, Vanilla, Chocolate, Pumpkin Spice"
   </div>`
+
+
 }
