@@ -175,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pageLoad\", function() { return pageLoad; });\nfunction pageLoad()\n{\n    let onPageStartup = document.createElement(\"div\")\n    let parentElement = document.getElementById(`content`)\n\n    parentElement.appendChild(onPageStartup)\n    onPageStartup.id = \"onPageStartup\"\n    \n    onPageStartup.innerHTML=`<p>WELCOME</p>\n    <p>Your Cronut Source.</p>`\n    startUpBefore.innerText=\"\"\n}\n\n//# sourceURL=webpack:///./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pageLoad\", function() { return pageLoad; });\nfunction pageLoad()\n{\n    let onPageStartup = document.createElement(\"div\")\n    let parentElement = document.getElementById(`content`)\n\n    parentElement.appendChild(onPageStartup)\n    onPageStartup.id = \"onPageStartup\"\n\n    onPageStartup.innerHTML=`<p>WELCOME</p>\n    <p>Your Cronut Source.</p>\n    <img id= \"croStartup\" src=\"/home/yourpalsal/projects/restaurantPage/src/LAFB-GT1830_DunlopDonuts-13.gif\"></img>`\n    startUpBefore.innerText=\"\"\n}\n\n//# sourceURL=webpack:///./src/pageLoad.js?");
 
 /***/ })
 
