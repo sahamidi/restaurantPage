@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./aboutUs.js":
-/*!********************!*\
-  !*** ./aboutUs.js ***!
-  \********************/
-/*! exports provided: aboutUs */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"aboutUs\", function() { return aboutUs; });\nfunction aboutUs()\n{\n    let parentElement = document.getElementById(`content`)\n    let newDivAbout = document.createElement(`div`)\n    newDivAbout.id = \"newDivAbout\"\n    parentElement.appendChild(newDivAbout)\n\n    newDivAbout.innerHTML = `<h2>About Us</h2>\n    <p> Contact: 777-777-7777</p>\n    <p>Email: whoaNutCronut@gmail.com</p>\n    <p>We love everything Cronut and cant wait to have you try ours!!</p>\n    `\n}\n\n//# sourceURL=webpack:///./aboutUs.js?");
-
-/***/ }),
-
 /***/ "./node_modules/lodash/lodash.js":
 /*!***************************************!*\
   !*** ./node_modules/lodash/lodash.js ***!
@@ -128,6 +116,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, exports) {
 
 eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\tmodule.deprecate = function() {};\n\t\tmodule.paths = [];\n\t\t// module.parent = undefined by default\n\t\tif (!module.children) module.children = [];\n\t\tObject.defineProperty(module, \"loaded\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.l;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"id\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.i;\n\t\t\t}\n\t\t});\n\t\tmodule.webpackPolyfill = 1;\n\t}\n\treturn module;\n};\n\n\n//# sourceURL=webpack:///(webpack)/buildin/module.js?");
+
+/***/ }),
+
+/***/ "./src/aboutUs.js":
+/*!************************!*\
+  !*** ./src/aboutUs.js ***!
+  \************************/
+/*! exports provided: aboutUs */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"aboutUs\", function() { return aboutUs; });\nfunction aboutUs()\n{\n    let parentElement = document.getElementById(`content`)\n    let newDivAbout = document.createElement(`div`)\n    newDivAbout.id = \"newDivAbout\"\n    parentElement.appendChild(newDivAbout)\n\n    newDivAbout.innerHTML = `<h2>About Us</h2>\n    <p> Contact: 777-777-7777</p>\n    <p>Email: whoaNutCronut@gmail.com</p>\n    <p>We love everything Cronut and cant wait to have you try ours!!</p>\n    `\n}\n\n//# sourceURL=webpack:///./src/aboutUs.js?");
 
 /***/ }),
 
@@ -163,7 +163,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\n/* harmony import */ var _croMenu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./croMenu.js */ \"./src/croMenu.js\");\n/* harmony import */ var _aboutUs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../aboutUs.js */ \"./aboutUs.js\");\n\n\n\n\n\nlet content = document.getElementById(\"content\")\n\n  \n  Object(_header_js__WEBPACK_IMPORTED_MODULE_1__[\"addHeader\"])();\n  Object(_croMenu_js__WEBPACK_IMPORTED_MODULE_2__[\"croMenuCreate\"])();\n  Object(_aboutUs_js__WEBPACK_IMPORTED_MODULE_3__[\"aboutUs\"])();\n \n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\n/* harmony import */ var _croMenu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./croMenu.js */ \"./src/croMenu.js\");\n/* harmony import */ var _aboutUs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./aboutUs.js */ \"./src/aboutUs.js\");\n/* harmony import */ var _pageLoad_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pageLoad.js */ \"./src/pageLoad.js\");\n\n\n\n\n\n\n\nlet content = document.getElementById(\"content\")\n\n  Object(_pageLoad_js__WEBPACK_IMPORTED_MODULE_4__[\"pageLoad\"])();\n  // addHeader();\n  // croMenuCreate();\n  // aboutUs();\n \n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pageLoad.js":
+/*!*************************!*\
+  !*** ./src/pageLoad.js ***!
+  \*************************/
+/*! exports provided: pageLoad */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pageLoad\", function() { return pageLoad; });\nfunction pageLoad()\n{\n    let onPageStartup = document.createElement(\"div\")\n    let parentElement = document.getElementById(`content`)\n\n    parentElement.appendChild(onPageStartup)\n    onPageStartup.id = \"onPageStartup\"\n    \n    onPageStartup.innerHTML=`<p>WELCOME</p>\n    <p>Your Cronut Source.</p>`\n    startUpBefore.innerText=\"\"\n}\n\n//# sourceURL=webpack:///./src/pageLoad.js?");
 
 /***/ })
 
